@@ -31,6 +31,9 @@ $ npm i, yarn ou pnpm i
 # Execute o server + app:
 $ npm run start, yarn start ou pnpm start
 ```
+
+Dúvidas e/ou dificuldades: matheusgcm10@outlook.com
+
 ----
 ### 💻 Versão Web
 ![web](./src/assets/web-version.png)
