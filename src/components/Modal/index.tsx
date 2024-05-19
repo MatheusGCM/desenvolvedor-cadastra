@@ -9,7 +9,7 @@ interface Props {
   title: string
 }
 
-export function SortModal({ onClose, children, title }: Props) {
+export function Modal({ onClose, children, title }: Props) {
   return (
     <div className="mobileSortComponent">
       <div className="headerContent">

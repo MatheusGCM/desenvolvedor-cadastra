@@ -8,7 +8,7 @@ import {
   FilterPriceRange,
   FilterSize,
   Product,
-  SortModal,
+  Modal,
   options,
 } from './components'
 import { useProducts } from './hooks/use-products'
@@ -91,7 +91,7 @@ export function App() {
       </main>
       <Footer />
       {sortModalVisible && (
-        <SortModal
+        <Modal
           title="Ordenar"
           onClose={() => setSortModalVisible((state) => !state)}
         >
@@ -106,10 +106,10 @@ export function App() {
               {op}
             </p>
           ))}
-        </SortModal>
+        </Modal>
       )}
       {filterModalVisible && (
-        <SortModal
+        <Modal
           title="Filtrar"
           onClose={() => setFilterModalVisible((state) => !state)}
         >
@@ -126,7 +126,7 @@ export function App() {
               />
             </div>
           </form>
-        </SortModal>
+        </Modal>
       )}
     </div>
   )
