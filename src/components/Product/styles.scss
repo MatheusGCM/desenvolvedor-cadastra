@@ -1,0 +1,54 @@
+
+.componentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 12rem;
+    height: 18rem;
+  }
+
+  h1 {
+    color: var(--black);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin: 0.62rem 0;
+  }
+  p {
+    color: var(--black);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 0.06rem;
+  }
+  span {
+    color: var(--gray-2);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 0.88rem;
+  }
+}
+
+@media (max-width: 768px){
+  .componentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 9rem;
+      height: 15rem;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.filterSizeContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  color: #333;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.inputsContainer {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--gray-1);
+
+  input {
+    display: none;
+  }
+  
+  div {
+    color: var(--gray-1);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
+
+  &:hover{
+    border-color: var(--primary);
+    div {
+      color: var(--black);
+    }
+  }
+}
+
+.selectedLabelContainer {
+  @extend .labelContainer;
+  border-color: var(--primary);
+  div {
+    color: var(--black);
+  }
+}
+  

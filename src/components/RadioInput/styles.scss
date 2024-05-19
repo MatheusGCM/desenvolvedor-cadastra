@@ -1,0 +1,44 @@
+.inputContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.62rem;
+
+  input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    margin-left: 0;
+    margin-top: 0;
+
+    width: 1rem;
+    height: 1rem;
+
+    border: 1px solid var(--gray-1);
+
+    &:checked::before {
+      content: '';
+      display: block;
+    
+      width: 0.625rem;
+      height: 0.625rem;
+    
+      background-color: var(--primary);
+    }
+    &:checked {
+      border-color: var(--primary);
+    }
+    &:hover{
+      border-color: var(--primary);
+    }
+  }
+
+  label {
+    color: var(--black);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}

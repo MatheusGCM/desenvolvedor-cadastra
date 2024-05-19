@@ -1,0 +1,42 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.125rem solid #C7C7C7;
+  padding: 1.25rem;
+  
+  div {
+    display: flex;
+    position: relative;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 2px;
+    right: -5px;
+
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.75rem;
+
+    background-color: var(--primary);
+
+    p {
+      color: #FFF;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    
+  }
+}
+
+@media (min-width: 768px){
+  .headerContainer {
+    padding: 1.37rem 10rem 0.94rem;
+  }
+}
