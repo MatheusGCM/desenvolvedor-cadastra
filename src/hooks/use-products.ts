@@ -78,7 +78,10 @@ export function useProducts() {
 
   async function fetchData() {
     const response = await getProducts()
-    setProducts(response)
+    if (response) {
+      return setProducts(response)
+    }
+    return setProducts([])
   }
 
   useEffect(() => {
